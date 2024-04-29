@@ -7,6 +7,8 @@ import FormSubmit from '@/components/form-submit';
 export default function PostForm({ action }) {
   const [state, formAction] = useFormState(action, {});
 
+  console.log('State: ', state);
+  console.log('Form Action: ', formAction);
   return (
     <>
       <h1>Create a new post</h1>
